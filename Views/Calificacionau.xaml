@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="GoldenTicket.Views.Calificacionau"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GoldenTicket.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="565" d:DesignWidth="925">
+    <Border CornerRadius="10"
+            Background="black">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1"
+                       Grid.Column="1"
+                       Grid.ColumnSpan="4"
+                       Text="Calificacion de la audiencia"
+                           Foreground="White"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="40"
+                       FontWeight="ExtraBold"/>
+            <Image Grid.Column="3"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="2"
+                   Height="60"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Source="/SCS/IMG/fronttickets.png"/>
+
+            <Image Grid.Column="1"
+                   Grid.Row="2"
+                   Grid.RowSpan="2"
+                   Source="/SCS/IMG/Thebatman1.jpg"/>
+            <Image Grid.Column="2"
+                   Grid.Row="2"
+                   Grid.RowSpan="2"
+                   Source="/SCS/IMG/morbius.jpg"/>
+            <Image Grid.Column="3"
+                   Grid.Row="2"
+                   Grid.RowSpan="2"
+                   Source="/SCS/IMG/sonic1.jpg"/>
+            <Image Grid.Column="4"
+                   Grid.Row="2"
+                   Grid.RowSpan="2"
+                   Source="/SCS/IMG/fantasticbeasts1.jpg"/>
+            <Button Grid.Column="1" Content="Ver calificacion" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="88" Background="#efb810" Foreground="Black" FontWeight="Bold" Click="BatmanAudiencia" />
+            <Button Grid.Column="2" Content="Ver calificacion" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="88" Background="#efb810" Foreground="Black" FontWeight="Bold" Click="MorbiusAudiencia" />
+            <Button Grid.Column="3" Content="Ver calificacion" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="88" Background="#efb810" Foreground="Black" FontWeight="Bold"  Click="Sonic2Audiencia"/>
+            <Button Grid.Column="4" Content="Ver calificacion" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="88" Background="#efb810" Foreground="Black" FontWeight="Bold" Click="FantasticBeastsAudiencia"/>
+        </Grid>
+    </Border>
+</UserControl>

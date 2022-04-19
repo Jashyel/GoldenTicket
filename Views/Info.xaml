@@ -1,0 +1,101 @@
+﻿<Window x:Class="GoldenTicket.Views.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoldenTicket.Views"
+        Title="AcercaDe" Height="300" Width="450"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        MouseDown="Cerrar"
+        Background="Transparent"
+        Cursor="Hand"
+        FontSize="15">
+    <Border CornerRadius="10"
+            BorderThickness="5"
+            Opacity="100"
+            Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1"
+                       Grid.Column="1"
+                       Grid.ColumnSpan="4"
+                       Text="INFORMACIÓN"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="40"
+                       FontWeight="ExtraBold"/>
+            <Image Grid.Column="3"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="2"
+                   Height="60"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Source="/SCS/IMG/fronttickets.png"/>
+            <StackPanel Grid.Row="2"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="4"
+                        Grid.RowSpan="4"
+                        HorizontalAlignment="Left"
+                        Background="Transparent">
+                <TextBlock FontSize="5"
+                       Margin="1"
+                       HorizontalAlignment="Left"
+                       Foreground="#FF5894BB"
+                       Text="" />
+                <TextBlock
+                               FontSize="12"
+                               Margin="1"
+                       HorizontalAlignment="Left"
+                       Foreground="#FF5894BB"
+                       Text="Nombre del equipo:  Frente Squad" FontFamily="Arial Black" />
+                <TextBlock FontSize="5"
+                       Margin="1"
+                       HorizontalAlignment="Left"
+                       Foreground="#FF5894BB"
+                       Text="" />
+                <TextBlock  FontSize="12"
+                       Margin="1"
+                       HorizontalAlignment="Left"
+                       Foreground="#FF5894BB"
+                       Text="Conformado por:Jashyel,Pafer,Trenvan,Hazel,Fabian y Jesus" FontFamily="Arial Black" />
+                <TextBlock FontSize="5"
+                       Margin="1"
+                       HorizontalAlignment="Left"
+                       Foreground="#FF5894BB"
+                       Text="" />
+                <TextBlock  FontSize="12"
+                       Margin="1"
+                       HorizontalAlignment="Left"
+                       Foreground="#FF5894BB"
+                       Text="Maestro: El Gran maestro Ramon Mora Marquez" FontFamily="Arial Black" />
+                <TextBlock FontSize="5"
+                       Margin="1"
+                       HorizontalAlignment="Left"
+                       Foreground="#FF5894BB"
+                       Text="" />
+                <TextBlock  FontSize="12"
+                       Margin="1"
+                       HorizontalAlignment="Left"
+                       Foreground="#FF5894BB"
+                       Text="Materia: Desarrollo de Interfaces para computadora" FontFamily="Arial Black" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
